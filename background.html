@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script>
+			function lol(s) {
+				chrome.tabs.create({ url: "http://ompldr.org/upload?url1=" + s });
+			}
+
+			// Called when the user clicks on the browser action icon.
+			chrome.browserAction.onClicked.addListener(function(tab) {
+				// We can only inject scripts to find the title on pages loaded with http
+				// and https so for all other pages, we don't ask for the title.
+				if (tab.url.indexOf("http:") == 0 || tab.url.indexOf("https:") == 0) {
+					lol(encodeURIComponent(tab.url));
+				}
+			});
+
+		</script>
+	</head>
+</html>
