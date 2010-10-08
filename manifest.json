@@ -2,13 +2,20 @@
   "name": "Omploader Extension",
   "version": "1.0",
   "description": "Chrome extension for http://ompldr.org.",
-  "icons": { "128": "ompldr.png" },
+  "icons": {
+	  "16": "ompldr16.png",
+	  "48": "ompldr48.png",
+	  "128": "ompldr128.png"
+  },
   "background_page": "background.html",
   "browser_action": {
     "default_title": "Ompload!",
     "default_icon": "ompldr.png"
   },
   "permissions": [
-  	"tabs", "http://*/*", "https://*/*"
+  	"tabs",
+	"http://*/*",
+	"https://*/*",
+	"contextMenus"
   ]
 }
