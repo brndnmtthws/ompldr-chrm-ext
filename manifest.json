@@ -1,6 +1,6 @@
 {
   "name": "Omploader Extension",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Chrome extension for http://ompldr.org.",
   "icons": {
 	  "16": "ompldr16.png",
@@ -17,5 +17,6 @@
 	"http://*/*",
 	"https://*/*",
 	"contextMenus"
-  ]
+  ],
+  "minimum_chrome_version": "7.0"
 }
